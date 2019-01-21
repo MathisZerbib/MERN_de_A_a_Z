@@ -24,7 +24,6 @@ export class Dashboard extends React.Component {
                 >
                 Se déconnecter
                 </Button>
-                <p>COUCOU</p>
             </div>
         )
     }
