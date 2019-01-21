@@ -9,6 +9,15 @@ import ResponsiveMenu from 'react-responsive-navbar';
 class App extends Component {
         render() {
             return (
+              <div className="App">
+              <div className="App-content">
+                  <Switch>  
+                      <Route exact path="/" component={Login}/>
+                      <Route exact path ="/signup" component={Signup}/>
+                      <PrivateRoute path='/dashboard' component={Dashboard} />
+                  </Switch>
+              </div>
+          </div>,
                 <ResponsiveMenu
                   menuOpenButton={<div />}
                   menuCloseButton={<div />}
@@ -24,6 +33,7 @@ class App extends Component {
                     </ul>
                   }
                 />
+                
               );
     }
 }
