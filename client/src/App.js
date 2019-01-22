@@ -5,34 +5,30 @@ import { Login } from './components/Login/Login.js';
 import { Signup } from './components/Signup/Signup.js';
 import { PrivateRoute } from './components/PrivateRoute.js';
 import './App.css';
-import ResponsiveMenu from 'react-responsive-navbar';
+import { slide as Menu } from 'react-burger-menu'
+
 class App extends Component {
+  showSettings (event) {
+    event.preventDefault();
+  }
+
         render() {
             return (
-              <div className="App">
-              <div className="App-content">
-                  <Switch>  
-                      <Route exact path="/" component={Login}/>
-                      <Route exact path ="/signup" component={Signup}/>
-                      <PrivateRoute path='/dashboard' component={Dashboard} />
-                  </Switch>
-              </div>
-          </div>,
-                <ResponsiveMenu
-                  menuOpenButton={<div />}
-                  menuCloseButton={<div />}
-                  changeMenuOn="500px"
-                  largeMenuClassName="large-menu-classname"
-                  smallMenuClassName="small-menu-classname"
-                  menu={
-                    <ul>
-                      <li>Item 1</li>
-                      <li>Item 2</li>
-                      <li>Item 3</li>
-                      <li>Item 4</li>
-                    </ul>
-                  }
-                />
+              <Menu>
+              <a id="home" className="menu-item" href="/">Home</a>
+              <a id="about" className="menu-item" href="/about">About</a>
+              <a id="contact" className="menu-item" href="/contact">Contact</a>
+              <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+            </Menu>,
+                   <div className="App">
+            <div className="App-content">
+                <Switch>  
+                    <Route exact path="/" component={Login}/>
+                    <Route exact path ="/signup" component={Signup}/>
+                    <PrivateRoute path='/dashboard' component={Dashboard} />
+                </Switch>
+            </div>
+        </div>
                 
               );
     }
