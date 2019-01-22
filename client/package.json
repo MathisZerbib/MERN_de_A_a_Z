@@ -12,6 +12,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "redux-burger-menu": "^0.2.8",
     "serve": "^9.1.0"
   },
   "scripts": {

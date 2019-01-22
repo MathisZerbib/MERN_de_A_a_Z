@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button } from "react-bootstrap";
 import { slide as Menu } from 'react-burger-menu'
 import API from '../../utils/API';
 
 
-export class Dashboard extends React.Component {
+export class Account extends React.Component {
     showSettings (event) {
         event.preventDefault();
       }
@@ -18,22 +17,14 @@ export class Dashboard extends React.Component {
     }
     render() {
         return(
-            <div className="Dashboard">
-             <Menu>
+            <div className="Account">
+     <Menu>
         <a id="Dashboard" className="menu-item" href="/dashboard">Dashboard</a>
         <a id="map" className="menu-item" href="/map">Map</a>
         <a id="Account" className="menu-item" href="/account">My Account</a>
         <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </Menu>,
-                <h1>Dashboard</h1>
-                <Button
-                onClick={this.disconnect}
-                block
-                bsSize="large"
-                type="submit"
-                >
-                Se déconnecter
-                </Button>
+            <h1>My Account</h1>
             </div>
         )
     }
