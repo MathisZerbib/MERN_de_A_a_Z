@@ -60,6 +60,14 @@ export class Signup extends React.Component {
                 >
                 Inscription
                 </Button>
+                <Button
+                href="/"
+                block
+                bsSize="large"
+                type="submit"
+                >
+                Se connecter
+                </Button>
             </div>
         )
     }

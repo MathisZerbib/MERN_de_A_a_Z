@@ -29,7 +29,7 @@ export class Dashboard extends React.Component {
       </Menu>,
       <Grid fluid>
         <Row>
-          <Col xs={6} md={3}>
+          <Col xs={12} s>
           <h1>Dashboard</h1>
                 <Button
                 onClick={this.disconnect}

@@ -24,7 +24,7 @@ export class Map extends React.Component {
         <a id="Account" className="menu-item" href="/account">My Account</a>
         <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </Menu>,
-            <h1>Map Des bars</h1>
+            <h1>Map des concerts</h1>
             </div>
         )
     }
