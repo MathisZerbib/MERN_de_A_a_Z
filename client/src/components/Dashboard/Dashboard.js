@@ -2,6 +2,8 @@ import React from 'react';
 import { Button } from "react-bootstrap";
 import { slide as Menu } from 'react-burger-menu'
 import API from '../../utils/API';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import '../Dashboard/Dashboard.css';
 
 
 export class Dashboard extends React.Component {
@@ -25,7 +27,10 @@ export class Dashboard extends React.Component {
         <a id="Account" className="menu-item" href="/account">My Account</a>
         <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </Menu>,
-                <h1>Dashboard</h1>
+      <Grid fluid>
+        <Row>
+          <Col xs={6} md={3}>
+          <h1>Dashboard</h1>
                 <Button
                 onClick={this.disconnect}
                 block
@@ -34,6 +39,9 @@ export class Dashboard extends React.Component {
                 >
                 Se déconnecter
                 </Button>
+          </Col>
+        </Row>
+      </Grid>
             </div>
         )
     }
