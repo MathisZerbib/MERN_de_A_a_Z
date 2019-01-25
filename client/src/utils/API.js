@@ -22,6 +22,7 @@ export default {
     },
     logout : function() {
         localStorage.clear();
-    }
+    },
+
 }
 

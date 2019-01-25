@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API from '../../utils/API';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export class Signup extends React.Component {
     constructor(props) {
@@ -39,6 +40,7 @@ export class Signup extends React.Component {
     }
     render() {
         return(
+          
             <div className="Login">
                 <FormGroup controlId="email" bsSize="large">
                 <ControlLabel>Email</ControlLabel>
@@ -60,14 +62,20 @@ export class Signup extends React.Component {
                 >
                 Inscription
                 </Button>
-                <Button
-                href="/"
-                block
-                bsSize="large"
-                type="submit"
-                >
-                Se connecter
-                </Button>
+                {/* <Grid fluid>
+            <Row>
+              <Col xsOffset={10} xs={2} s>
+              <Button
+                    href="/login"
+                    block
+                    bsSize="large"
+                    type="submit"
+                    >
+                    Connexion
+                    </Button>
+              </Col>
+            </Row>
+          </Grid> */}
             </div>
         )
     }
