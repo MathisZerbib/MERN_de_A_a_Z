@@ -53,9 +53,6 @@ export class Login extends React.Component {
                 >
                 Connexion
                 </Button>
-                {/* <Grid fluid>
-            <Row >
-              <Col xs={12}> */}
               <Button
                 href="/Signup"
                 block
@@ -64,9 +61,7 @@ export class Login extends React.Component {
                 >
                 Inscription
                 </Button>
-              {/* </Col>
-            </Row>
-          </Grid> */}
+
             </div>
         )
     }

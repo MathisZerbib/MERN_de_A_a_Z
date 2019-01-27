@@ -42,9 +42,9 @@ export class Home extends React.Component {
         </Row>
 
         <Row>
-  <Col xs> </Col> 
-  <Col xs> </Col>
-  <Col xs> </Col> 
+  <Col xs> First </Col> 
+  <Col xs> Second </Col>
+  <Col xs> Third</Col> 
         </Row>
 
       </Grid>

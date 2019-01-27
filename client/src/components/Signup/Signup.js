@@ -62,10 +62,7 @@ export class Signup extends React.Component {
                 >
                 Inscription
                 </Button>
-                {/* <Grid fluid>
-            <Row>
-              <Col xsOffset={10} xs={2} s>
-              <Button
+                <Button
                     href="/login"
                     block
                     bsSize="large"
@@ -73,10 +70,7 @@ export class Signup extends React.Component {
                     >
                     Connexion
                     </Button>
-              </Col>
-            </Row>
-          </Grid> */}
-            </div>
+              </div>
         )
     }
 }
