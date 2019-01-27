@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API from '../../utils/API';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export class Signup extends React.Component {
     constructor(props) {
